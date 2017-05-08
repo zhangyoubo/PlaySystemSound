@@ -19,6 +19,7 @@
 		A3E9558916D6245E00A420D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E9558816D6245E00A420D0 /* ViewController.m */; };
 		A3E9558C16D6245E00A420D0 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3E9558A16D6245E00A420D0 /* ViewController_iPhone.xib */; };
 		A3E9558F16D6245E00A420D0 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3E9558D16D6245E00A420D0 /* ViewController_iPad.xib */; };
+		A3E9559616D6247400A420D0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E9559516D6247400A420D0 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		A3E9558816D6245E00A420D0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A3E9558B16D6245E00A420D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		A3E9558E16D6245E00A420D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		A3E9559516D6247400A420D0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3E9559616D6247400A420D0 /* AudioToolbox.framework in Frameworks */,
 				A3E9557016D6245E00A420D0 /* UIKit.framework in Frameworks */,
 				A3E9557216D6245E00A420D0 /* Foundation.framework in Frameworks */,
 				A3E9557416D6245E00A420D0 /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +61,7 @@
 		A3E9556016D6245E00A420D0 = {
 			isa = PBXGroup;
 			children = (
+				A3E9559516D6247400A420D0 /* AudioToolbox.framework */,
 				A3E9557516D6245E00A420D0 /* playSystemsound */,
 				A3E9556E16D6245E00A420D0 /* Frameworks */,
 				A3E9556C16D6245E00A420D0 /* Products */,
@@ -269,6 +273,7 @@
 				GCC_PREFIX_HEADER = "playSystemsound/playSystemsound-Prefix.pch";
 				INFOPLIST_FILE = "playSystemsound/playSystemsound-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -280,6 +285,7 @@
 				GCC_PREFIX_HEADER = "playSystemsound/playSystemsound-Prefix.pch";
 				INFOPLIST_FILE = "playSystemsound/playSystemsound-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -303,6 +309,7 @@
 				A3E9559416D6245E00A420D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
